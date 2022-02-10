@@ -1,0 +1,9 @@
+export { default as Footer } from "./footer/Footer";
+export { default as About } from "./about/index";
+export { default as Amar } from "./amar/index";
+export { default as Hamian } from "./hamian/index";
+export { default as Header } from "./header/index";
+export { default as News } from "./news/index";
+export { default as Refrees } from "./refrees/index";
+export { default as SignUp } from "./signUp/index";
+export { default as Awards } from "./awards/index";

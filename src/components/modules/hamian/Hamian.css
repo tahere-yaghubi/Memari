@@ -1,0 +1,94 @@
+.hamian{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FAFAFA;
+}
+.hamian h1{
+    position: relative;
+    font-size: 2em;
+    
+    z-index: 3;
+}
+.hamian h1::after{
+    width: 110px;
+    height: 6px;
+    content: "";
+    background-color: #9DE0D6;
+    opacity: 0.9;
+    padding: 8px; 
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+   z-index: -1;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+    margin-top: 6em;
+    align-items: center;
+    justify-content: center;
+}
+.item{
+    width: 12em;
+    height: 12em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item img{
+    object-fit: contain;
+}
+@media screen and (max-width : 1200px) {
+ .item {
+ width: 10em;
+ height: 10em;
+}
+}
+@media screen and (max-width : 992px) {
+ 
+.item{
+    width: 8em;
+    height: 8em;
+}
+}
+@media screen and (max-width : 768px) {
+    .list{
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 1em;
+        margin-top: 6em;
+    } 
+ .item {
+   width: 8em;
+   height: 8em;
+}
+.item img{
+    width: 5em;
+    height: 5em;
+}
+}
+@media screen and (max-width : 576px) {
+ .list {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1em;
+    margin-top: 6em;
+}
+}
+@media screen and (max-width : 500px) {
+    .list {
+       display: grid;
+       grid-template-columns: repeat(2 , 1fr);
+       grid-template-rows: repeat(5, 1fr);
+       grid-gap: 1em;
+       margin-top: 6em;
+   }
+   }

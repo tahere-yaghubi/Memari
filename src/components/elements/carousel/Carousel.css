@@ -1,0 +1,44 @@
+.carousel-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+
+}
+
+.carousel {
+  max-width: 80%;
+  width: 100%;
+  width: 1000px;
+  direction: ltr;
+}
+
+.carousel * {
+  direction: ltr;
+}
+.slick-slide {
+  
+}
+.slick-slide > div {
+  display: flex;
+}
+
+ion-icon{
+    color: #252525;
+}
+.privius{
+    font-size: 2.4em;
+    font-weight: 100;
+    position: absolute;
+    top: 20%;
+    left: -20%;
+}
+.next{
+    position: absolute;
+    font-size: 2.4em;
+    top: 40%;
+    left: -20%;
+}
+.arrows{
+    width: 20%;
+}

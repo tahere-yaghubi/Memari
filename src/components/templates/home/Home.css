@@ -1,0 +1,12 @@
+ .home{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+ }
+
+ .item{
+     width: 200px;
+     height: 200px;
+     background-color: aqua;
+     margin: 1em;
+ }

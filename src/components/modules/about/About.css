@@ -1,0 +1,274 @@
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 6em 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex: 1;
+}
+.about > .container{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0 auto;
+}
+.about-text{
+    width: 50%;
+    height: 250px;
+    color: #252525;
+    z-index: 3;
+    margin-top: 2em;
+
+}
+.about-text h1{
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-top: 0.4em;
+    line-height: 1.5em;
+    z-index: 3;
+}
+.about-text p{
+    line-height: 1.6em;
+    margin-left: 6em;
+    font-weight: 100;
+    color: #807E7E;
+    
+}
+span.line{
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+    color: #252525;
+}
+span.line::after{
+ width: 90%;
+ height: 15px;
+ content: "";
+ background-color: #9de0d6;
+ padding: 8px;
+ position: absolute;
+ right: -10px;
+ bottom: 15px;
+z-index: -1;
+}
+.about-image{
+    /* position: relative;*/
+    width: 60%;
+    z-index: 3; 
+}
+.about-image {
+    width: 700px;
+    height: 500px;
+    position: relative;
+}
+.pic{
+    width: 100%; 
+    height: auto;
+    
+}
+.mask{
+    width:100%;
+    position: absolute;
+    bottom: 40px;
+    left: -10px;
+    z-index: -1;
+}
+@media screen and (max-width : 1440px) {
+    .about-text p {
+        margin-left: 1em;
+}
+}
+@media screen and (max-width : 1200px) {
+ .about {
+    padding: 4em 4em;
+}
+.about-text{
+     
+}
+.about-image{
+ width: 580px;
+ height: 450px;
+}
+}
+@media screen and (max-width : 405px) {
+.about > .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.about-text{
+    height: 5em;
+}
+/* .pic{
+    width: 100%;
+    height: 4em;
+}
+.mask{
+    width: 100%;
+    height: 4em;
+} */
+
+}
+@media screen and (max-width : 1180px) {
+    .about-text p {
+        margin-left: 1em;
+}
+.about-text{
+    margin-top: 0em;  
+}
+}
+@media screen and (max-width : 1084px) {
+    .about-text h1{
+        margin-bottom: 0.3em;  
+    }
+}
+@media screen and (max-width : 1050px) {
+    .about-text h1{
+        margin-bottom: 0.3em;  
+        margin-top: 0;
+    }
+}
+@media screen and (max-width : 992px) {
+    .about{
+        padding: 2em;
+    }
+    .about-text h1{
+         font-size: 28px;
+         margin-top: 10px;
+    }
+    .about-text p{
+        font-size: 14px;
+    }
+    span.line::after{
+        width: 90%;
+        height: 5px;
+        content: "";
+        background-color: #9de0d6;
+        padding: 8px;
+        position: absolute;
+        right: -10px;
+        bottom: 15px;
+       z-index: -1;
+       }
+       .mask{
+        width:100%;
+        position: absolute;
+        bottom: 70px;
+        left: -10px;
+        z-index: -1;
+    }
+}
+@media screen and (max-width : 932px) {
+    .about{
+        padding: 6em 4em;
+    }
+    .about-image{
+        width: 480px;
+        height: 460px;
+    }
+    .mask{
+        width:100%;
+        position: absolute;
+        bottom: 111px;
+        left: -10px;
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .about > .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .about-text {
+       width: 100%;
+   }
+   .about-image{
+       width: 100%;
+   }
+   .mask{
+       bottom: 19px;
+   }
+}
+@media screen and (max-width : 754px) {
+    .mask{
+        bottom: -4px;
+    }
+}
+@media screen and (max-width : 712px) {
+    .mask{
+        bottom: 2px;
+    }
+}
+@media screen and (max-width : 638px) {
+    .about-image{
+        width: 100%;
+        height: 415px;
+    }
+    .mask{
+        bottom: 30px;
+    }
+}
+@media screen and (max-width : 592px) {
+    .mask{
+        bottom: 66px;
+    }
+}
+@media screen and (max-width : 570px) {
+    .mask{
+        bottom: 60px;
+    }
+}
+@media screen and (max-width : 542px) {
+    .mask{
+        bottom: 113px;
+    }
+}
+@media screen and (max-width : 494px) {
+    .mask{
+        bottom: 160px;
+    }
+}
+@media screen and (max-width : 448px) {
+    .about{
+        padding: 4em 2em;
+    }
+ .about-image {
+  height:300px;
+}
+.mask{
+    bottom: 4px;
+}
+}
+@media screen and (max-width : 400px) {
+ .about-text {
+  height: 250px;
+
+}
+}
+@media screen and (max-width : 366px) {
+ .mask {
+  bottom: 2;
+}
+@media screen and (max-width : 372px) {
+ .mask {
+bottom: 3em;
+}
+}
+}
+@media screen and (max-width : 340px) {
+ .about {
+ padding: 4em 1em;
+}
+.about-image{
+    height: 255px;
+}
+.mask{
+    bottom: 0;
+}
+}

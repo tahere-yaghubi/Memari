@@ -1,0 +1,254 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #212121;
+    background-color: #212121;
+    padding: 3em 9em;
+}
+.footer > .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.contact-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right:5em;
+}
+.contact-list ul{
+    margin: 0 4em;
+}
+.contact-list ul li{
+    color: #212121;
+    height: 2em;
+}
+.contact-list ul li a{
+    color: #8f8f8f;
+}
+.contact-list ul li a.contact-title{
+    color: #9B7C4D;
+}
+.logo{
+    background: url("../../../assets/media/logo-text.svg") center center no-repeat;
+    background-size: cover;
+    width:15rem;
+    height: 12rem;
+   
+}
+.logos{
+    padding-left: 3rem;
+    
+}
+.logos img{
+    padding-right: 3em;
+}
+@media screen and (max-width : 576px) {
+ .footer{
+     flex-direction: column;
+ }
+ .logos {
+ flex-direction: row;
+}
+}
+@media screen and (max-width : 720px) {
+ .footer {
+    flex-direction: column;
+    padding: 3em 3em;
+}
+}
+@media screen and (max-width : 992px) {
+ .footer {
+    flex-direction: row;
+    padding: 2em 0em;
+}
+.container{
+    padding: 0;
+    margin: 0;
+}
+.contact-list{
+   margin: 0;
+   justify-content: space-around;
+    }
+    .logo{
+        width: 10rem;
+    }
+    .contact ul {
+        padding: 0;
+        margin: 0 2em;
+    }
+    .logos{
+        display: flex;
+        flex-direction: row;
+    }
+    .logos img{
+        padding : 0.2em;
+    }
+}
+@media screen and (max-width : 1500px) {
+  
+.logos{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+}
+.contact-list{
+    margin: 0;
+}
+.contact-list ul{
+    margin: 0 2em;
+}
+}
+@media screen and (max-width : 1300px) {
+ .footer {
+    padding: 3em 4em;
+}
+}
+@media screen and (max-width : 1100px) {
+ .footer {
+    padding: 3em 2em;
+}
+}
+@media screen and (max-width : 768px) {
+  .logo{
+      width: 9rem;
+  }
+  .footer{
+      
+      padding: 2em 0.4em;
+  }
+}
+@media screen and (max-width : 920px) {
+ .footer {
+ flex-direction: column;
+}
+.contact{
+    padding: 2em 0;
+}
+.contact-list ul{
+    margin: 0 1em;
+}
+.logos img{
+   padding: 0.2em;
+}
+}
+@media screen and (max-width : 670px) {
+  .logo{
+      width: 10rem;
+      height: 10rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+}
+@media screen and (max-width : 597px) {
+ .footer {
+  padding: 0;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.contact-list{
+    padding: 1em;
+}
+/* .logo{
+    width: 15rem;
+    height: 15rem;
+} */
+
+}
+@media screen and (max-width :420px) {
+    .logos{
+        width: 100%;
+    }
+ .logos img{
+  width: 50%;
+}
+}
+@media screen and (max-width : 392px) {
+ .contact-list ul{ 
+ margin: 0;
+}
+}
+@media screen and (max-width : 377px) {
+  .contact-list{
+      padding: 0;
+  }
+  .contact-list ul{
+      padding: 0;
+  }
+}
+@media screen and (max-width : 770px) {
+    .footer > .container{
+        flex-direction: column;
+    }
+ .contact {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+.contact-list{
+    width: 60%;
+}
+.logos{
+    width: 40%;
+}
+
+}
+@media screen and (max-width : 560px) {
+    .container{
+        padding: 1.3em 0 !important;
+    }
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+     }
+     .logo{
+         width: 10rem;
+         height: 10rem;
+     }
+     .contact-list{
+         padding: 0;
+     }
+     .contact-list ul li a{
+         font-size: 14px;
+     }
+
+}
+@media screen and (max-width : 447px) {
+ .contact {
+     flex-direction: column;
+ }
+ .contact-list{
+     width: 100%;
+     padding: 1em;
+     align-items: center;
+     justify-content: space-around;
+ }
+ .container ul {
+     width: 100%;
+     text-align: center;
+     
+ }
+ .container ul li{
+ 
+ }
+}

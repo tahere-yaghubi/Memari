@@ -1,0 +1,82 @@
+ .refrees{
+    background: url("../../../assets/media/pattern.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center; 
+ }
+  .refrees > .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .refrees > .container h1{
+     font-size: 1.3em;
+     font-weight: bold;
+     position: relative;
+     z-index: 3;
+     margin: 2em 0;
+ }
+ .refrees > .container h1::after{
+    width: 130px;
+    height: 6px;
+    content: "";
+    background-color: #DFC8A3;
+    opacity: 0.9;
+    padding: 8px; 
+    position: absolute;
+    left: -5%;
+    bottom: -5px;
+   z-index: -1;
+   
+ }
+ .wrapper{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     width: 100%;
+     margin: 4em auto;
+ }
+ .slider{
+     
+     
+ }
+ .slick-slider {
+     width: 80%;
+ }
+ .mainCarousel{
+     display: flex;
+     flex-direction: row;
+     width: 80%;
+     height: 400px;
+ }
+.mainCarousel:nth-child(1){
+    padding-bottom: 2em;
+}
+ 
+.refrees__btn{
+    width: 14em;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (max-width : 400px) {
+    .wrapper{
+        margin: 1em auto;
+    }
+ .icons {
+ display: none;
+}
+.slick-slider{
+    width: 100%;
+}
+}
