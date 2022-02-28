@@ -6,6 +6,7 @@ const SignUp = () => {
   return (
     <div className="signUp">
       <div className="container">
+        <div className="signUp__content">
         <h1>آثار خود را ثبت کنید</h1>
         <span>با مراجعه به بخش کاربری آثار خود را ثبت کنید</span>
         <p>
@@ -13,7 +14,9 @@ const SignUp = () => {
           ستون استفاده قرار می گیرد و سطرآنچنان که لازم است، و برای شرایط فعلی
           تکنولوژی مورد
         </p>
-        <Button value="ورود به بخش کاربری" hasIcon hasBg />
+
+        <Button hasIcon hasBg rotate theme="dark" value="ورود به بخش کاربری" />
+        </div>
       </div>
     </div>
   );

@@ -1,28 +1,35 @@
+import classNames from "classnames";
 import React from "react";
 import Button from "../../elements/button/Button";
-import Head from "../../elements/head/Head";
+import CountDown from "../../elements/countDown";
+import Head from "../head/Head";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ className }) => {
+  
+
   return (
-    <div className="header">
+    <div className={classNames("header", className)}>
       <div className="container">
         {" "}
         <Head />
         <div className="counter">
-          <h1 className="time">60:18:10:9</h1>
-          <span className="title"> مانده تا شروع جشنواره معماری</span>
-          <div className="text">
-            <span>90:06:24:35</span>
-            <small>مانده تا شروع جشنواره معماری</small>
+          <div>
+            <CountDown />
+            <Button
+              hasIcon
+              hasBg
+              rotate
+              theme="dark"
+              value=" در مورد جشنواره بیشتر بدانید"
+              className="btn"
+              onClick={() =>{
+
+                const scrollElement = document.getElementById("about")
+                scrollElement.scrollIntoView({ behavior: "smooth" })
+              }}
+            />
           </div>
-          <Button
-            hasIcon
-            hasBg
-            rotate
-            value=" در مورد جشنواره بیشتر بدانید"
-            className="btn"
-          />
         </div>
       </div>
     </div>

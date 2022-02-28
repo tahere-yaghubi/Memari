@@ -1,6 +1,7 @@
 
 @import url("./fonts.css");
 @import url("./reset.css");
+@import url("./variables.css");
 *{
     box-sizing: border-box;
 }
@@ -15,6 +16,7 @@ body{
     margin: 0;
     font-family: "iransans-regular";
     font-size: 1em;
+    font-weight: normal;
     color: #000;
     width: 100%;
     
@@ -23,8 +25,7 @@ body{
     margin: 0 auto;
     width: 100%;
     max-width: 92rem;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 1em;
     margin-right: auto;
     margin-left: auto;
 }

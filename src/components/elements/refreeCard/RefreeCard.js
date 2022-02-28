@@ -9,9 +9,9 @@ const RefreeCard = ({ src, title }) => {
       </div>
       <div className="refreeCard-info">
         <span>{title}</span>
-        <span className="">
+        <span className="more-info">
           <ion-icon name="arrow-back-outline" />
-          <small>اطلاعات بیشتر </small>
+         <small> اطلاعات بیشتر</small>
         </span>
       </div>
     </div>

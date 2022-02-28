@@ -1,19 +1,16 @@
 .news{
-     background-color: #fff;
+    background-color: #fff;
     width: 100%;
     height: 100vh;
-   
     display: flex;
     flex-direction: column;
-   justify-content: space-around;
-    
-    
-   
+   justify-content: space-around;  
 }
 .news > .container{
     display: flex;
     flex-direction: column;
    justify-content: space-around;
+   align-items: center;
     
 }
 .news h1{
@@ -51,9 +48,5 @@
 }
 .mainCarousel:nth-child(1){
    padding-bottom: 2em;
-}
-.news > .container > button {
-    margin: 0 auto;
-    width: 13em;
 }
  

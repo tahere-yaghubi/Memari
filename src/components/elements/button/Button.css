@@ -1,70 +1,69 @@
-.button{ 
-     
-    position: relative;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 2;
-    height: 50px;
-    padding: 0.4em 0.2em;
-    transition: all 200ms linear;
-    border-radius: 1000px;
-    width: 200px;
-    letter-spacing: 1px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-    /* align-self: center; */
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    /* box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25); */
-    outline: 0;
+.button {
+  width: max-content;
+  font-size: 1rem;
+  padding: 0.5em;
+  border-radius: 1000px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid inherit;
+  cursor: pointer;
+  transition: 0.4s;
+  outline: 0;
+  color: var(--light-color);
+  border: 1px solid inherit;
+}
+.button span {
+  padding: 0 0.4em;
+}
+
+.button.--hasBg {
+
   
+  background-color: #252525;
+  border-color: #313131;
+}
+.button.__theme_guest {
+  border: 1px solid #fff;
+  color: var(--light-color);
+}
+.button.__theme_guest:hover {
+  background-color: var(--dark-color);
+  border: 1px solid var(--dark-color);
+  
+  color: var(--light-color);
+}
+.button.button.__theme_dark{
+  border: 1px solid var(--dark-color);
+}
+.button.button.__theme_dark:hover {
+  border: 1px solid var(--dark-color);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
 
-
-
-
-    /* border-radius: 1000px;
-    padding: 0.2em 0.8em;
-   
-    color: #fff;
-    font-size: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;  */
+.button > ion-icon {
+  color: #fff;
+  margin-right: 0.4em;
+  background-color: #313131;
+  border-radius: 1000px;
+  padding: 0.4em;
+  font-size: 1.3em;
 }
-.button span{
-    padding-right: 0.7em;
-}
-.button  > ion-icon{
-    color: #fff;
-    margin-right: 0.8em;
-    background-color: #313131;
-    border-radius: 1000px;
-    padding: 0.4em;
-    font-size: 1.3em; 
-} 
-.button.--hasBg{
-    background-color:#252525;
-    border-color: #313131;
-
-}
-.button.--hasBorder{
-    border: 1px solid #fff;
-}
-@media screen and (max-width : 768px) {
- .button {
-  font-size: 0.8rem;
-  width: 143px;
-  height: 38px;
-}
-.button span{
-     
-}
-.button  > ion-icon{
+@media screen and (max-width: 576px) {
+  
+  .button{
+    width: max-content;
+    font-size: 0.8rem;
+  }
+  .button > ion-icon {
     margin-right: 0.4em;
+  }
+}
+
+@media screen and (max-width : 357px) {
+ .button {
+  font-size: 0.6rem;
 }
 }

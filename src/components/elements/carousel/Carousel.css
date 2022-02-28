@@ -2,14 +2,24 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     flex: 1;
 
 }
-
-.carousel {
-  max-width: 80%;
+.carousel-wrapper > .carousel > .slick-list{
   width: 100%;
-  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel-wrapper > .carousel > .slick-list > .slick-slide {
+   width: 13em;
+}
+.carousel {
+  max-width: 90%;
+  width: 100%;
+  width: 1120px;
   direction: ltr;
 }
 
@@ -26,19 +36,101 @@
 ion-icon{
     color: #252525;
 }
-.privius{
-    font-size: 2.4em;
-    font-weight: 100;
-    position: absolute;
-    top: 20%;
-    left: -20%;
-}
-.next{
-    position: absolute;
-    font-size: 2.4em;
-    top: 40%;
-    left: -20%;
-}
+ 
 .arrows{
-    width: 20%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4em; 
+  
+  
 }
+.arrows button {
+  display: flex;
+  align-items: center;
+  padding: 0.3em;
+}
+@media screen and (max-width : 1360px) {
+  .arrows {
+    margin-left: 2em;
+ }
+ }
+
+ @media screen and (max-width : 1300px) {
+  .carousel{
+    max-width: 80%;
+  }
+  .arrows {
+    margin-left: 3em;
+ }
+ }
+ @media screen and (max-width : 1200px) {
+  .arrows {
+    margin-left: 2.5em;
+ }
+ }
+ @media screen and (max-width : 1100px) {
+   .carousel{
+     width: 85%;
+   }
+
+  .arrows {
+    width: 5%;
+    margin-left: 1.5em;
+ }
+ }
+ @media screen and (max-width : 1025px) {
+  .carousel{
+    max-width: 70%;
+  }
+  .arrows {
+    width: 10%;
+    margin-left: 4em;
+ }
+ }
+ @media screen and (max-width : 725px) {
+  .arrows {
+  margin-left: 2em;
+ }
+ .carousel{
+  max-width: 75%;
+}
+ }
+ @media screen and (max-width : 620px) {
+  .arrows {
+    margin-left: 1em;
+   }
+   .carousel{
+    max-width: 80%;
+  }
+ }
+ @media screen and (max-width : 580px) {
+   .container{
+     margin: 0;
+   }
+  .carousel-wrapper{
+    justify-content: space-around;
+  }
+   .carousel{
+     max-width: 95;
+   }
+  .arrows {
+    margin-left: 0.5em;
+    width: 5%;
+   }
+ }
+ @media screen and (max-width : 543px) {
+   .arrows{
+     display: none;
+   }
+   .carousel{
+     width: 100%;
+   }
+ }
+ @media screen and (max-width : 360px) {
+  .slick-slide {
+  width: 100%;
+ }
+ }

@@ -71,3 +71,8 @@
   }
 
 }
+@media screen and (max-width : 375px) {
+  .options ion-icon{
+      font-size: 1em;
+  }
+}

@@ -5,29 +5,28 @@ import className from "classnames";
 import "./Button.css";
 
 const Button = ({
-  children,
   onClick,
   btnColor = "teal",
-  labelColor,
-  disabled,
-  type,
-  style,
-
   value,
   border,
   hasBg,
+  theme,
   hasIcon,
   width,
   icon,
   className,
   rotate,
+  iconName,
+
+  renderItem = () => {},
 }) => {
   const button = classNames("button", className, {
     "--hasBg": hasBg,
     "--hasBorder": border,
+    [`__theme_${theme}`]: theme,
   });
   return (
-    <button className={button} style={{ width: width }}>
+    <button className={button} style={{ width: width }} onClick={onClick}>
       <span>{value}</span>
 
       {hasIcon &&
@@ -45,6 +44,8 @@ Button.defaultProps = {
   hasBg: false,
   hasIcon: false,
   rotate: false,
+  theme: "dark",
+  iconBg: "dark",
 };
 
 Button.propTypes = {
@@ -53,5 +54,7 @@ Button.propTypes = {
   hasIcon: PropTypes.bool,
   width: PropTypes.string,
   rotate: PropTypes.bool,
+  theme: PropTypes.oneOf(["guest , dark"]),
+  iconBg: PropTypes.oneOf(["light , dark"]),
 };
 export default Button;

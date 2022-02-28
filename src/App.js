@@ -1,4 +1,4 @@
-import Home from "./components/templates/home";
+import Home from "./pages/home/index";
 import "./styles/global.css";
 function App() {
   return (

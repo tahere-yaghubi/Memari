@@ -1,0 +1,95 @@
+.count-down{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: flex-start;
+} 
+.time{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 3rem;
+color: #ffff;
+font-size: 4em;
+font-weight: 500;
+text-shadow: 2px 0 0 #252525, -2px 0 0 #252525, 0 2px 0 #252525, 0 -2px 0 #252525, 1px 1px #252525, -1px -1px 0 #252525, 1px -1px 0 #252525, -1px 1px 0 #252525;
+ margin-bottom: 0.3em;
+ margin: 0 auto;
+}
+.time span {
+    display: flex;
+    width: 1.1em;
+    height: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title{
+    padding: 0.4em 0;
+    margin: 0 auto;
+    color: #DFC8A3;
+    font-size: 1.8em;
+ }
+  
+ .text{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     padding: 2em 0;
+  
+ 
+ }
+ .text span{
+     font-size: 2.5em;
+     color: #C7B4A8;
+ }
+ .text small{
+     font-size: 1.3em;
+     color: #9A7A64;
+ }
+  
+ @media screen and (max-width : 576px) {
+    .count-down{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+
+    }
+    .time{
+        font-size: 3em;
+    }
+    .title{
+        font-size: 1.3em;
+    }
+    .text{
+        align-items: center;
+    }
+    .text span{
+      font-size: 1.9em;
+    }
+    .text small{
+        font-size: 1em;
+    }
+ }
+  
+@media screen and (max-width : 357px) {
+    .time{
+        font-size: 2em;
+    }
+    .title{
+        font-size: 1em;
+    }
+    .text{
+        align-items: center;
+        padding: 1.6em 0;
+    }
+    .text span{
+      font-size: 1.5em;
+    }
+    .text small{
+        font-size: 1em;
+    }
+    
+} 

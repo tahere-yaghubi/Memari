@@ -1,11 +1,10 @@
 import React from "react";
 import banner from "../../../assets/media/banner.jpg";
-import mask from "../../../assets/media/Mask.jpg";
 import "./About.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="container">
         <div className="about-text">
           <h1>
@@ -24,7 +23,7 @@ const About = () => {
         </div>
         <div className="about-image">
           <img src={banner} alt="banner" className="pic" />
-          <img src={mask} alt="mask" className="mask" />
+          <img src={banner} alt="mask" className="mask" />
         </div>
       </div>
     </div>

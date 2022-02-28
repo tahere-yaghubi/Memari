@@ -50,6 +50,14 @@ const HAMIAN = {
       id: 10,
       src: Filomo,
     },
+    {
+      id: 11,
+      src: Sia,
+    },
+    {
+      id: 12,
+      src: Vero,
+    },
   ],
 };
 export default HAMIAN;

@@ -7,12 +7,11 @@
 }
 .awards > .container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .awards-title{
-   position: absolute;
+   padding: 1em;
    direction: ltr;
-   margin: 3em;
    top: 4em;
    left: 7em;
 }
@@ -23,13 +22,16 @@
 .awards-title h3{
     font-size: 2em;
     color: #ffffff;
-    padding-top: 1em;
+    margin-top: 1em;
     position: relative;
     z-index: 3;
     opacity: 1;
+    display: block;
+    
+    width: max-content;
 }
 .awards-title h3::after{
-    width: 100%;
+   width: 100%;
     height: 10px;
     content: "";
     background-color: #9de0d6;
@@ -50,10 +52,15 @@
  align-items: center;
  justify-content: space-between;
  text-align: center;
- position: absolute;
+ margin-top: 2em;
+ 
 
 }
-.award p{
+.award-title{
+    display: flex;
+    flex-direction: column;
+}
+.award-title p{
     color: #212121;
     padding: 1.2em;
     font-weight: bold;
@@ -64,7 +71,7 @@
     border-top: 1px solid #eee;
    flex-direction: column;
    display: flex;
-   text-align: right;
+   text-align: center;
    justify-content: center;
    padding: 2em 1em;
 }
@@ -72,7 +79,6 @@
     font-size: 1.3em;
     font-weight: bold;
     padding-bottom: 0.7em;
- 
     
 }
 .desc small{
@@ -91,268 +97,162 @@
 }
 .items{
     width: 70%;
+    
+    /* padding-top: 3em; */
     display: flex;
     flex-direction: row;
-    position: relative;
-}
-.two{
-  top: 5%;
-  left: 33%;
-
-}
-.one{
-    top: 8%;
-    left: 60%;
-}
-
-
-@media screen and (max-width : 1400px) {
- .one{
-  left: 45%;
-    }
- .two {
- 
-}
-}
-@media screen and (max-width : 1200px) {
- .two {
-  left: 20%;
-}
- .one{
-   left:52%;  
- }
-}
-@media screen and (max-width : 1100px) {
- .one {
-  left: 54%;
-}
-.awards-title{
-    left: 3em;
-}
-}
-@media screen and (max-width : 1066px) {
-.one {
-    left: 57%;
-    top: 14%;
- }
-}
-@media screen and (max-width : 992px) {
-.award{
- width: 12em;
- height: 16em;
- background-color: #fff;
- border-radius: 20px;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-between;
- text-align: center;
- position: absolute;
-
-}
-.award img{
-    width: 3.5em;
-    margin-top: 2em;
-}
-.desc{
-   
-   padding: 1em;
-}
-.desc small{
-  font-size: 0.8em;
-}
-.desc span{
-    color: #000;
-    font-size: 0.9em;
-}
-.awards-title{
-    margin: 0;
-}
-
-.awards-title h3{
-    font-size: 1.6em;
-    color: #ffffff;
-    padding-top: 1em;
-    position: relative;
-    z-index: 3;
-    opacity: 1;
-}
-.awards-title span{
-    font-size: 1.6em;
-    color: #fff;
-}
-.awards-title h3::after{
-    width: 100%;
-    height: 5px;
-    content: "";
-    background-color: #9de0d6;
-    opacity: 0.9;
-    padding: 8px; 
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-   z-index: -1;
-}
-
-}
-@media screen and (max-width : 855px) {
- .one {
- left: 59%;
- top: 12%;
-}
-
-}
-@media screen and (max-width : 830px) {
- .one {
- left: 54%;
-}
-.two{
-    left: 15%;
-}
-}
-@media screen and (max-width : 794px) {
- .one {
-  left: 61%;
-}
-}
-@media screen and (max-width : 794px) {
-  .one {
-     left: 54%;
-    }
+    justify-content: center;
+    
     
 }
+
+.award-one{
+    margin-right: 1.4em; 
+
+}
+.award-two{
+  margin-top: 5em;
+}
+
+@media screen and (max-width : 992px) {
+ .awards-title {
+  margin: 1em;
+}
+}
+
 @media screen and (max-width : 768px) {
-  .container{
-      display: flex;
-      flex-direction: column;
-      
-  }
-  .awards-title h3,  .awards-title span{
-   font-size: 1.4em;
-}
-/* .awards-title h3::after{
-    width: 100%;
-    height: 2px;
-    content: "";
-    background-color: #9de0d6;
-    opacity: 0.9;
-    padding: 7px; 
-    position: absolute;
-    right: 0;
-    bottom: 10px;
-   z-index: -1;
-} */
-.two{
-    left: 13%;
-}
+ .awards > .container {
+    justify-content: center;
+    align-items: self-start;
 }
 .items{
-  margin: 13em auto;
-}
-
-@media screen and (max-width : 745px) {
- .one {
- top: 14%;
+    width: 100%;
+    margin-top: 0.4em;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 .award{
- width: 11em;
- height: 16em;
- background-color: #fff;
- border-radius: 20px;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: space-between;
- text-align: center;
- position: absolute;
-}
-}
+    width: 14em;
+    height: 18em;
+    padding: 0;
+    margin: 0 0.7em;
 
+}
+.awards-title {
+    margin: 0em 1em;
+  }
+  .desc span{
+      font-size: 1.1em;
+  }
+  .desc small {
+      font-size: 0.98em;
+  }
+  .award-two{
+      margin-top: 3em;
+  }
+  .desc{
+      padding: 1.2em 0.5;
+  }
+  
+}
 
 @media screen and (max-width : 576px) {
- .awards > .container{
-     display: flex;
-     flex-direction: column;
+.items{
+        margin: 2em auto;
     }
+    .desc{
+        padding: 1.3em 0.6em;
+    }
+.desc span {
+        font-size: 1em;
+        padding-bottom: 0.7em;
+    }
+    .desc small{
+        font-size: 0.8em;
+    }
+  .award-title img{
+      width: 3.7em;
+  }
  .award {
- width: 11em;
- height: 14em;
+    width: 12em;
+    height: 14em;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin : 0 0.4em;
 }
-.one{
-    top: 29%;
+.award-two{
+    margin-top: 2.4em;
 }
-.two{
-   top: 30%;
-}
-}
-@media screen and (max-width : 680px) {
-    .award {
-        width: 10em;
-        height: 14em;
-       }
-}
-@media screen and (max-width : 620px) {
-    .two {
-        left: -8%;
-        top: 28%;
-    }
-    .one {
-        top: 17%;
-        left: 38%;
-    }
-}
-@media screen and (max-width : 580px) {
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 2em;
 
-    }
-    .items{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        position: unset;
-        width: calc(100% - 4em);
-        margin: 0 auto;
-    }
-    .award{
-        position: unset;
 
-    }
-    .two {
-        left: -8%;
-        top: 28%;
-    }
-    .one {
-        top: 17%;
-        left: 38%;
-        margin-top: 0;
-        
-    }
+.awards-title h3 , .awards-title span{
+    font-size: 1.7em;
 }
-@media screen and (max-width : 422px) {
+.award-title p{
+    font-size:0.9em;
+}
+.award-title img{
+    margin-top: 0.7em;
+}
+.desc{
+    padding: 1em 0.5em;
+}
+}
+@media screen and (max-width : 460px) {
+    .awards{
+        height: 85vh;
+    }
+   
  .items {
- margin: 0 auto;
- justify-content: space-around;
- width: calc(100% - 2em);
-
-}
-}
-@media screen and (max-width : 370px) {
- .items {
-    width: calc(100% - 1em);
-    margin: 0 auto;
-}
-
-}
-@media screen and (max-width : 334px) {
- .items {
- 
+  flex-direction: column;
+  margin: 0.5em auto;
 }
 .award{
-    width:130px;
+    height: 9em;
+}
+.award{
+    width: 16em;
+    padding: 0.5em;
+    height: 10em;
+    flex-direction: row;
+    margin: 0.6em auto;
+}
+.award .desc{
+    border-top: none;
+    border-right: 1px solid #eee;
+}
+.award-title {
+    padding: 1em;
+    font-size: 1em;
+    align-items: center;
+}
+.award-title h3, .award-title span{
+font-size: 1.1em;
+}
+.award-title h3::after{
+    height: 3px; 
+    opacity: 0.9;
+    padding: 4px; 
+}
+.award-title img{
+    width: 3.4em;
+}
+
+.award-title p{
+    padding: 0.6em 0;
+}
+}
+@media screen and (max-width : 281px) {
+ .award {
+ width: 13em;
+}
+.items{
+    margin: 1em auto;
 }
 }

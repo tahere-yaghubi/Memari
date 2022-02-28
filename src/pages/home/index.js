@@ -1,5 +1,5 @@
 import React from "react";
-import { PUBLIC_INFOS } from "../../../constants";
+import { PUBLIC_INFOS } from "../../constants";
 import {
   About,
   Amar,
@@ -10,23 +10,22 @@ import {
   News,
   Refrees,
   SignUp,
-} from "../../modules";
+} from "../../components/modules";
 
 import "./Home.css";
-import Responsive from "./test";
 
 const Home = () => {
   const data = PUBLIC_INFOS;
   return (
     <div className="home">
-      <Header />
+      <Header className="view" />
       <About />
       <Refrees />
       <Awards />
-      {/* <News /> */}
+      <News />
       {/* <SignUp /> */}
-      {/* <Amar /> */}
-      {/*   <Hamian /> */}
+      <Amar />
+      <Hamian />
       <Footer data={data} />
     </div>
   );
