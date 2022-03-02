@@ -1,11 +1,11 @@
-import React, { forwardRef, useRef } from "react";
+import React, { forwardRef, useEffect, useRef, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import PropTypes from "prop-types";
 import arrow_left from "../../../assets/media/arrow-left.svg";
 import arrow_right from "../../../assets/media/arrow-right.svg";
-
+import classNames from "classnames";
 import "./Carousel.css";
 
 const NextArrow = ({ onClick }) => {
@@ -22,14 +22,46 @@ const PreviousArrow = ({ onClick }) => {
     </button>
   );
 };
-const Carousel = forwardRef(({ children, responsive, settings }, ref) => {
-  console.log(settings, "settings");
+const Carousel = forwardRef(({ children, id, settings }, ref) => {
   const slider = useRef(null);
+  const [cls, setCls] = useState("");
+
+  function fadeLastItem(oldIndex, index) {
+    const windowSize = window.innerWidth;
+    const targetSetting = settings.responsive
+      .filter((item) => item.breakpoint > windowSize)
+      .filter((item) => item.settings.slidesToShow >= 3)
+      .sort((a, b) => a.breakpoint - b.breakpoint)[0] || {
+      settings: { slidesToShow: 5 },
+    };
+    const fadeItemIndex = index + targetSetting.settings.slidesToShow;
+
+    document
+      .querySelectorAll(`#${id} .slick-slide .refreeCard`)
+      .forEach((item) => {
+        item.classList.remove("-fade");
+      });
+
+    const fadeItemTarget = document.querySelector(
+      `#${id} .slick-slide:nth-child(${fadeItemIndex}) .refreeCard`
+    );
+
+    if (fadeItemTarget) fadeItemTarget.classList.add("-fade");
+  }
+
+  useEffect(() => {
+    fadeLastItem(0, 0);
+  });
 
   return (
-    <div className="carousel-wrapper">
-      <div className="carousel">
-        <Slider ref={slider} {...settings}>
+    <div className="carousel-wrapper" id={id}>
+      <div className={classNames("carousel", cls)}>
+        <Slider
+          ref={slider}
+          {...settings}
+          beforeChange={fadeLastItem}
+          infinite={false}
+        >
           {children}
         </Slider>
       </div>
@@ -51,5 +83,6 @@ Carousel.propTypes = {
   speed: PropTypes.number,
   slideToScroll: PropTypes.number,
   className: PropTypes.string,
+  id: PropTypes.string.isRequired,
 };
 export default Carousel;

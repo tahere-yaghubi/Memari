@@ -32,29 +32,14 @@ const REFREES = {
       src: pic5,
     },
     {
-      id: "11",
+      id: "6",
       title: "حافظ نظری",
       src: pic1,
     },
     {
-      id: "22",
+      id: "7",
       title: "حافظ نظری",
       src: pic2,
-    },
-    {
-      id: "33",
-      title: "حافظ نظری",
-      src: pic3,
-    },
-    {
-      id: "44",
-      title: "حافظ نظری",
-      src: pic4,
-    },
-    {
-      id: "55",
-      title: "حافظ نظری",
-      src: pic5,
     },
   ],
 };

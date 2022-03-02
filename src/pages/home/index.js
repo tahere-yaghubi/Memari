@@ -23,7 +23,7 @@ const Home = () => {
       <Refrees />
       <Awards />
       {/* <News /> */}
-      <SignUp />
+      {/* <SignUp /> */}
       <Amar />
       <Hamian />
       <Footer data={data} />

@@ -13,6 +13,7 @@ const Refrees = ({}) => {
         <h1>داوران جشنواره</h1>
         <div className="wrapper">
           <Carousel
+            id="refree"
             settings={{
               infinite: false,
               speed: 500,
@@ -26,14 +27,12 @@ const Refrees = ({}) => {
                   breakpoint: 1300,
                   settings: {
                     slidesToShow: 4,
-                    infinite: true,
                   },
                 },
                 {
                   breakpoint: 1120,
                   settings: {
                     slidesToShow: 3,
-                    infinite: true,
                   },
                 },
 
@@ -47,15 +46,13 @@ const Refrees = ({}) => {
                   breakpoint: 600,
                   settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1,
-                    initialSlide: 1,
                   },
                 },
               ],
             }}
           >
-            {REFREES.items.map((item) => (
-              <RefreeCard {...item} key={item.id} />
+            {REFREES.items.map((item, idx) => (
+              <RefreeCard index={idx} {...item} key={item.id} />
             ))}
           </Carousel>
         </div>
