@@ -20,9 +20,9 @@ const Home = () => {
     <div className="home">
       <Header className="view" />
       <About />
-      <Refrees />
+      {/* <Refrees /> */}
       <Awards />
-      <News />
+      {/* <News /> */}
       {/* <SignUp /> */}
       <Amar />
       <Hamian />

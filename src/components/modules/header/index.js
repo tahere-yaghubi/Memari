@@ -6,12 +6,9 @@ import Head from "../head/Head";
 import "./Header.css";
 
 const Header = ({ className }) => {
-  
-
   return (
     <div className={classNames("header", className)}>
       <div className="container">
-        {" "}
         <Head />
         <div className="counter">
           <div>
@@ -23,10 +20,9 @@ const Header = ({ className }) => {
               theme="dark"
               value=" در مورد جشنواره بیشتر بدانید"
               className="btn"
-              onClick={() =>{
-
-                const scrollElement = document.getElementById("about")
-                scrollElement.scrollIntoView({ behavior: "smooth" })
+              onClick={() => {
+                const scrollElement = document.getElementById("about");
+                scrollElement.scrollIntoView({ behavior: "smooth" });
               }}
             />
           </div>
