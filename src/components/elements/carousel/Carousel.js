@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,34 +8,34 @@ import arrow_right from "../../../assets/media/arrow-right.svg";
 
 import "./Carousel.css";
 
+const NextArrow = ({ onClick }) => {
+  return (
+    <button className="next" onClick={onClick}>
+      <img src={arrow_left} alt="arrow_left" />
+    </button>
+  );
+};
+const PreviousArrow = ({ onClick }) => {
+  return (
+    <button className="previous" onClick={onClick}>
+      <img src={arrow_right} alt="arrow_right" />
+    </button>
+  );
+};
 const Carousel = forwardRef(({ children, responsive, settings }, ref) => {
   console.log(settings, "settings");
-  // const nextRef = useRef(null);
-  // const prevRef = useRef(null);
-  const NextArrow = () => {
-    return (
-      <button className="next">
-        <img src={arrow_left} alt="arrow_left" />
-      </button>
-    );
-  };
-
-  const PreviousArrow = ({ data }) => {
-    return (
-      <button className="previous">
-        <img src={arrow_right} alt="arrow_right" />
-      </button>
-    );
-  };
+  const slider = useRef(null);
 
   return (
     <div className="carousel-wrapper">
       <div className="carousel">
-        <Slider settings={settings}>{children}</Slider>
+        <Slider ref={slider} {...settings}>
+          {children}
+        </Slider>
       </div>
       <div className="arrows">
-        <NextArrow />
-        <PreviousArrow />
+        <NextArrow onClick={() => slider.current.slickNext()} />
+        <PreviousArrow onClick={() => slider.current.slickPrev()} />
       </div>
     </div>
   );

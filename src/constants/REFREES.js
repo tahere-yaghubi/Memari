@@ -31,6 +31,31 @@ const REFREES = {
       title: "حافظ نظری",
       src: pic5,
     },
+    {
+      id: "11",
+      title: "حافظ نظری",
+      src: pic1,
+    },
+    {
+      id: "22",
+      title: "حافظ نظری",
+      src: pic2,
+    },
+    {
+      id: "33",
+      title: "حافظ نظری",
+      src: pic3,
+    },
+    {
+      id: "44",
+      title: "حافظ نظری",
+      src: pic4,
+    },
+    {
+      id: "55",
+      title: "حافظ نظری",
+      src: pic5,
+    },
   ],
 };
 export default REFREES;
