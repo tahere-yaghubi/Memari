@@ -13,8 +13,7 @@ function Timer({ expiryTimestamp }) {
   return (
     <>
       <div className="time">
-        <span>{millisecond}</span> :<span>{seconds}</span> :
-        <span>{minutes}</span>:<span>{hours}</span>
+        <span>{seconds}</span> :<span>{minutes}</span>:<span>{hours}</span>
       </div>
     </>
   );
@@ -28,7 +27,7 @@ export default function CountDown() {
       <Timer expiryTimestamp={time} />
       <span className="title"> مانده تا شروع جشنواره معماری</span>
       <div className="text">
-        <span>90:06:24:35</span>
+        <span> 35 روز</span>
         <small>مانده تا شروع جشنواره معماری</small>
       </div>
     </div>
