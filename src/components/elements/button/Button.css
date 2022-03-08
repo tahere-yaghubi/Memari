@@ -35,10 +35,9 @@
   color: var(--light-color);
 }
 .button.button.__theme_dark{
-  border: 1px solid var(--dark-color);
+  /* border: 1px solid var(--dark-color); */
 }
 .button.button.__theme_dark:hover {
-  border: 1px solid var(--dark-color);
   background-color: var(--light-color);
   color: var(--dark-color);
 }
@@ -52,7 +51,6 @@
   font-size: 1.3em;
 }
 @media screen and (max-width: 576px) {
-  
   .button{
     width: max-content;
     font-size: 0.8rem;

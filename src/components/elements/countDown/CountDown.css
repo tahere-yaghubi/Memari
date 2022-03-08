@@ -14,11 +14,11 @@ font-size: 4em;
 font-weight: 500;
 text-shadow: 2px 0 0 #252525, -2px 0 0 #252525, 0 2px 0 #252525, 0 -2px 0 #252525, 1px 1px #252525, -1px -1px 0 #252525, 1px -1px 0 #252525, -1px 1px 0 #252525;
  margin-bottom: 0.3em;
- margin: 0 auto;
+ 
 }
 .time span {
     display: flex;
-    width: 1.1em;
+    width: 1.3em;
     height: 1em;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ text-shadow: 2px 0 0 #252525, -2px 0 0 #252525, 0 2px 0 #252525, 0 -2px 0 #25252
 
 .title{
     padding: 0.4em 0;
-    margin: 0 auto;
+   
     color: #DFC8A3;
     font-size: 1.8em;
  }
@@ -36,17 +36,19 @@ text-shadow: 2px 0 0 #252525, -2px 0 0 #252525, 0 2px 0 #252525, 0 -2px 0 #25252
      display: flex;
      flex-direction: column;
      align-items: flex-start;
-     padding: 2em 0;
+     padding: 0.5em 0;
   
  
  }
  .text span{
      font-size: 2.5em;
      color: #C7B4A8;
+     padding: 0.4em 0;
  }
  .text small{
      font-size: 1.3em;
      color: #9A7A64;
+     padding: 0.4em 0;
  }
   
  @media screen and (max-width : 576px) {

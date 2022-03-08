@@ -2,6 +2,7 @@
     background-color: #fff;
     width: 100%;
     height: 100vh;
+
     display: flex;
     flex-direction: column;
    justify-content: space-around;  
@@ -13,7 +14,7 @@
    align-items: center;
     
 }
-.news h1{
+.news > .container h1{
     font-size: 1.3em;
     justify-content: flex-start;
     font-weight: bold;
@@ -22,7 +23,7 @@
     padding-right: 30px;
     margin: 2em 0;
 }
-.news h1::after{
+.news > .container h1::after{
    width: 160px;
    height: 6px;
    content: "";
@@ -34,19 +35,52 @@
    bottom: -5px;
   z-index: -1;
 }
-.slider{
+.news > .container .wrapper{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 2em;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-around;
+     width: 100%;
+     margin: 3em auto;
 }
-.mainCarousel{
+.news > .container .mainCarousel{
     display: flex;
     flex-direction: row;
     width: 80%;
     height: 400px;
 }
-.mainCarousel:nth-child(1){
+.news > .container .mainCarousel:nth-child(1){
    padding-bottom: 2em;
+}
+@media screen and (max-width : 768px) {
+ .news {
+ height: auto;
+}
+.news > .container h1{
+    margin: 1em auto;
+}
+.news > .container .wrapper {
+    margin: 2em auto;
+}
+}
+@media screen and (max-width : 400px) {
+    .news > .container h1{
+        padding-right: 0;
+    }
+    .news > .container h1::after{
+        right: 0;
+    }
+    .slick-slider{
+        width: 265px;
+    }
+    /* .arrows{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 70%;
+        left: 0;
+    } */
 }
  

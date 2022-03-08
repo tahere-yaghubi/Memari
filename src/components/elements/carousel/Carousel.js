@@ -12,6 +12,7 @@ const NextArrow = ({ onClick }) => {
   return (
     <button className="next" onClick={onClick}>
       <img src={arrow_left} alt="arrow_left" />
+      {/* <ion-icon name="arrow-back-outline"></ion-icon> */}
     </button>
   );
 };
@@ -19,10 +20,11 @@ const PreviousArrow = ({ onClick }) => {
   return (
     <button className="previous" onClick={onClick}>
       <img src={arrow_right} alt="arrow_right" />
+      {/* <ion-icon name="arrow-forward-outline"></ion-icon> */}
     </button>
   );
 };
-const Carousel = forwardRef(({ children, id, settings }, ref) => {
+const Carousel = forwardRef(({ children, id, settings, customClass }, ref) => {
   const slider = useRef(null);
   const [cls, setCls] = useState("");
 
@@ -55,7 +57,7 @@ const Carousel = forwardRef(({ children, id, settings }, ref) => {
 
   return (
     <div className="carousel-wrapper" id={id}>
-      <div className={classNames("carousel", cls)}>
+      <div className={classNames("carousel", cls, customClass)}>
         <Slider
           ref={slider}
           {...settings}

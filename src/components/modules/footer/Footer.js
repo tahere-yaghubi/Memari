@@ -58,8 +58,12 @@ const Footer = ({ data }) => {
         </div>
 
         <div className="logos">
-          <img src={logo1} alt="logo1" />
-          <img src={logo2} alt="logo2" />
+          <a>
+            <img src={logo1} alt="logo1" />
+          </a>
+          <a>
+            <img src={logo2} alt="logo2" />
+          </a>
         </div>
       </div>
     </div>

@@ -6,13 +6,14 @@ import RefreeCard from "../../elements/refreeCard/RefreeCard";
 
 import "./Refrees.css";
 
-const Refrees = ({}) => {
+const Refrees = () => {
   return (
     <div className="refrees">
       <div className="container">
         <h1>داوران جشنواره</h1>
         <div className="wrapper">
           <Carousel
+            customClass="refrees-carousel"
             id="refree"
             settings={{
               infinite: false,
@@ -46,6 +47,14 @@ const Refrees = ({}) => {
                   breakpoint: 600,
                   settings: {
                     slidesToShow: 1,
+                  },
+                },
+                {
+                  breakpoint: 320,
+                  settings: {
+                    slidesToShow: 1,
+                    autoScroll: true,
+                    arrows: true,
                   },
                 },
               ],

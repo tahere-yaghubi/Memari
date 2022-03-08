@@ -82,6 +82,7 @@
 }
 .search-modal .content label .submit-search ion-icon {
   color: white;
+  font-size: 1.5em;
 }
 
 .search-modal .content .drop-down {

@@ -64,14 +64,64 @@
     align-items: center;
 }
 @media screen and (max-width : 580px) {
+
     .refrees > .container{
       margin: 0;
       padding: 0;
     }
+    .wrapper{
+        margin: 0 auto;
+        padding: 0;
+    }
+    .wrapper > div{
+        width: 60%;
+    }
+    
+
+.slick-slider{
+    width: 240px !important;
+    margin: 0 auto;
+}
+    
+    .wrapper > .refrees-carousel{
+        width: 400px;
+    }
+    .refrees > .container h1{
+        margin: 2em;
+    }
 }
 
 
+
+/* @media screen and (max-width : 576px) {
+ .refrees {
+  height: 70vh;
+}
+} */
+@media screen and (max-width : 768px) {
+    .refrees {
+        height: auto;
+    }
+    .wrapper{
+        margin: 2em auto;
+    }
+    .refrees > .container h1{
+        margin: 0;
+    }
+}
 @media screen and (max-width : 400px) {
+    .refrees{
+        height: auto;
+    }
+    .refrees > .container h1{
+        margin: 1em auto;
+    }
+    .refrees > .wrapper > .carousel{
+        width: 300px !important;
+      }
+      .refrees > .carousel{
+        width: 66%;
+      }
     .wrapper{
         margin: 1em auto;
     }
@@ -81,20 +131,20 @@
 .slick-slider{
     width: 100%;
 }
-}
-/* @media screen and (max-width : 576px) {
- .refrees {
-  height: 70vh;
-}
+/* .arrows{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 70%;
+    left: 0;
+
+  
 } */
-@media screen and (max-width : 768px) {
-    .refrees {
-        height: 70vh;
-    }
-    .wrapper{
-        margin: 2em auto;
-    }
-    .refrees > .container h1{
-        margin: 0;
+}
+@media screen and (max-width : 320px) {
+    .slick-slider{
+       margin-left: 1.5em;
     }
 }

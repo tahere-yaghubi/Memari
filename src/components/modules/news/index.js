@@ -11,8 +11,49 @@ const News = () => {
     <div className="news">
       <div className="container">
         <h1> آخرین اخبار جشنواره</h1>
-        <div className="slider">
-          <Carousel ref={slider} className="mainCarousel"  >
+        <div className="wrapper">
+          <Carousel
+            ref={slider}
+            className="mainCarousel"
+            id="refree"
+            settings={{
+              infinite: false,
+              speed: 500,
+              arrows: true,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              initialSlide: 0,
+
+              responsive: [
+                {
+                  breakpoint: 1300,
+                  settings: {
+                    slidesToShow: 2,
+                  },
+                },
+                {
+                  breakpoint: 1120,
+                  settings: {
+                    slidesToShow: 2,
+                  },
+                },
+
+                {
+                  breakpoint: 996,
+                  settings: {
+                    slidesToShow: 1,
+                  },
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
+                  },
+                },
+              ],
+            }}
+          >
+            {" "}
             {NEWS.items.map((item) => (
               <NewCard {...item} key={item.id} />
             ))}

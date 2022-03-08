@@ -50,7 +50,10 @@ ion-icon{
 .arrows button {
   display: flex;
   align-items: center;
-  padding: 0.3em;
+  padding: 0.5em;
+}
+.arrows button ion-icon{
+  display: none;
 }
 @media screen and (max-width : 1360px) {
   .arrows {
@@ -120,17 +123,50 @@ ion-icon{
     margin-left: 0.5em;
     width: 5%;
    }
+   .wrapper > div {
+    padding: 0 4em;
+    width: 60%;
+}
  }
  @media screen and (max-width : 543px) {
-   .arrows{
-     display: none;
+
+   .wrapper{
+     margin: 0;
+     position: relative;
    }
    .carousel{
-     width: 100%;
+     /* position: relative; */
    }
+ 
+   }
+    /* .arrows button{
+      padding: 10px 5px;
+      border-radius: 1000px;
+       
+      color: #fff;
+      margin: 0 0.2em;
+    }
+     */
+    /* .arrows button ion-icon{
+      display: flex;
+      color: #fff;
+      font-size: 1em;
+      
+    } */
+  
+ @media screen and (max-width : 402px) {
+  .arrows{
+    display: none;
+  }
+  .wrapper > div {
+    padding:none;
+     
+}
  }
+
  @media screen and (max-width : 360px) {
   .slick-slide {
   width: 100%;
  }
+ 
  }

@@ -50,9 +50,16 @@
 }
 .logos{
     padding-left: 3rem;
-    
 }
-.logos img{
+.logos a{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logos a img{
     padding-right: 3em;
 }
 @media screen and (max-width : 576px) {
@@ -208,6 +215,10 @@
 }
 .logos{
     width: 40%;
+    margin: 0 auto;
+}
+.logos a img {
+    padding: 0;
 }
 
 }
@@ -234,6 +245,9 @@
 
 }
 @media screen and (max-width : 447px) {
+    .logos{
+        width: 100%;
+    }
  .contact {
      flex-direction: column;
  }
