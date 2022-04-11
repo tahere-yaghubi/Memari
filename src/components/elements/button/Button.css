@@ -41,7 +41,12 @@
   background-color: var(--light-color);
   color: var(--dark-color);
 }
-
+.button.--hasBorder{
+  border: 1px solid #fff;
+}
+.button.--hasBorder:hover{
+  border: 1px solid #efefef;
+ }
 .button > ion-icon {
   color: #fff;
   margin-right: 0.4em;

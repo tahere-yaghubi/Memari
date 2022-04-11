@@ -22,7 +22,9 @@
     color: #fff;
 
 }
-
+.btn_margin{
+    margin-right: 1.5em;
+}
 @media screen and (max-width : 768px) {
  .head{
     padding: 0 1em;

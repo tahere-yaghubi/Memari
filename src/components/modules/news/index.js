@@ -60,7 +60,14 @@ const News = () => {
           </Carousel>
         </div>
 
-        <Button hasIcon hasBg rotate theme="dark" value="مشاهده تمام اخبار" />
+        <Button
+          hasIcon
+          hasBg
+          border
+          rotate
+          theme="dark"
+          value="مشاهده تمام اخبار"
+        />
       </div>
     </div>
   );

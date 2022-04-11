@@ -38,6 +38,9 @@
 .contact-list ul li a{
     color: #8f8f8f;
 }
+.contact-list ul li a:hover{
+    color: #fff;
+}
 .contact-list ul li a.contact-title{
     color: #9B7C4D;
 }

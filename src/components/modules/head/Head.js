@@ -11,7 +11,7 @@ const Head = () => {
   return (
     <div className="head">
       {" "}
-      <Button value="ثبت اثر در جشنواره" theme="guest" />
+      <Button value="ثبت اثر در جشنواره" theme="guest" className="btn_margin" />
       <img src={logo} alt="logo" />
       <div>
         <Search search={search} setSearch={setSearch} />

@@ -55,6 +55,8 @@ const Refrees = () => {
                     slidesToShow: 1,
                     autoScroll: true,
                     arrows: true,
+                    autoplay: true,
+                    autoplaySpeed: 500,
                   },
                 },
               ],
@@ -65,7 +67,7 @@ const Refrees = () => {
             ))}
           </Carousel>
         </div>
-        <Button hasBg hasIcon value="مشاهده تمام داوران" />
+        <Button hasBg hasIcon border value="مشاهده تمام داوران" />
       </div>
     </div>
   );
