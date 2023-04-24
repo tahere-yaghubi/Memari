@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## View Demo 
-Memari(https://tahere-yaghubi.github.io/Memari/)
+[Memari](https://tahere-yaghubi.github.io/Memari/)
 
 ## Available Scripts
 
