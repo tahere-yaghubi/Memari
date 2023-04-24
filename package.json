@@ -1,5 +1,6 @@
 {
-  "homepage": "https://github.com/tahere-yaghubi/Memari",
+
+  "homepage" : "https://tahere-yaghubi.github.io/Memari",
   "name": "memari",
   "version": "0.1.0",
   "private": true,
